@@ -1,0 +1,26 @@
+
+
+.aside__sidebar {
+    background-color: $primary;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 450px;
+    align-items: center;
+}
+
+.aside__text {
+    margin: 5px;
+}
+
+.aside__total {
+    display: flex;
+    flex-direction: column;
+    align-items: center;;
+}
+
+hr {
+    width: 200px;
+    margin: 5px;
+}
