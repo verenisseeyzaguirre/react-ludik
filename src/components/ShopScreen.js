@@ -12,16 +12,18 @@ const init = () => {
 
 export const ShopScreen = () => {
 
-    const [list, dispatch ] = useReducer(shopReducer, [], init )
+    const [list, dispatch ] = useReducer(shopReducer, [], init );
+    console.log(list);
 
     const handleAddNew = (product) => {
 
-        if( list.includes(product)) {
-
-            // dispatch({
-            //     type: 'update',
-            //     payload: product
-            // });
+        // list.includes(product)
+        if( list.findIndex(elem => elem.id === product.id) !== -1) {
+            console.log(product);
+            dispatch({
+                type: 'update',
+                payload: product
+            });
 
         }  else {
             dispatch({
